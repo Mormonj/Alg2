@@ -6,7 +6,7 @@ class Solution:
         current_end = 0
         farthest = 0
 
-        for i in range(len(nums) - 1):  # не нужно прыгать с последнего элемента
+        for i in range(len(nums) - 1): 
             farthest = max(farthest, i + nums[i])
 
             if i == current_end:
